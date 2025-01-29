@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="icon" type="image/png" href="/myicon.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-image: url('/bg1-masthead.jpg') ;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+           
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        body::after {
+            content: "";
+            position: absolute;
+            
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .forgot-password-container {
+            background: rgba(255, 255, 255, 0.00001);
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .forgot-password-container h2 {
+            margin-bottom: 20px;
+            color: rgb(253, 253, 253);
+        }
+
+        .forgot-password-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid rgb(204, 204, 204);
+            border-radius: 5px;
+        }
+
+        .forgot-password-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .forgot-password-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .forgot-password-container a {
+            display: block;
+            margin-top: 10px;
+            color: #f9fafb;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="forgot-password-container">
+        <h2>Forgot Password</h2>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Reset Password</button>
+        </form>
+        <a href="/log.html">Back to Login</a>
+        <a href="/index.html">Back to Main Page</a>
+    </div>
+</body>
+</html>
